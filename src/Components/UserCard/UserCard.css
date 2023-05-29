@@ -1,0 +1,11 @@
+
+.user-card-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 10px;
+    border-radius: 1rem;
+    background-color: rgba(12, 12, 12, 0.842);
+
+}
