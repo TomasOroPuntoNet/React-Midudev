@@ -2,14 +2,25 @@
 import './App.css'
 import UserCard from './Components/UserCard/UserCard'
 
-function App() {
-  
+  function App() {
+    const users = [
+      {name: 'Pepe',
+      mail:'pepeargento@gmail.com',
+      isFollowing: true
+      },
+      {name: 'Moni',
+      mail:'moniargento@gmail.com',
+      isFollowing: true
+      },
+    ]
 
   return (
     <div style={{display:'flex', flexDirection:'column', gap:'10px'}}>
-      <UserCard   isFollowing mail='pepe@maurinho.com' img='willsmith'>Pepardo </UserCard>  
-      <UserCard  mail='pepe@maurinho.com' img='Carl'>Pepardol</UserCard>  
-      <UserCard isFollowing  mail='pepe@maurinho.com' img='willsmith'>Pepardoz</UserCard>  
+      {users.map(({isFollowing, name,mail})=>{
+        return(
+          <UserCard name={name} mail={mail} initialIsFollowing={isFollowing} key={name}/>
+        )
+      })}
     </div>
   )
 }

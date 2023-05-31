@@ -1,5 +1,5 @@
 
-.user-card-button{
+.card{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,5 +7,15 @@
     padding: 10px;
     border-radius: 1rem;
     background-color: rgba(12, 12, 12, 0.842);
-
+    width: 400px;
+}
+.user-card-button{
+    opacity: .8;
+    width: 120px;
+}
+.user-card-button:hover{
+    background-color: rgba(169, 4, 4, 0.888);
+}
+.user-card-button.is-following:hover{
+    background-color: cadetblue ;
 }
